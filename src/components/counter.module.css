@@ -1,0 +1,52 @@
+.counterWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    padding: 20px;
+    border: #61dafb 3px solid;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.counterValue{
+    background-color: #61dafb;
+    color: #282c34;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 2.5rem;
+
+}
+.counterButtons{
+    border: #61dafb 3px solid;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+button{
+    width: 50%;
+    height: 40px;
+    background-color: #61dafb;
+    color: #282c34;
+    outline: none;
+    border: #61dafb 1px solid;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: inherit;
+    color: #61dafb;
+    outline: none;
+    border: #61dafb 1px solid;
+}
+button:disabled{
+    opacity: 0.5;
+}
+.red{
+    color: red;
+}
