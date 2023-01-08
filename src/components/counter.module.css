@@ -1,17 +1,53 @@
 .counterWrapper{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
-    width: 300px;
+    width: 350px;
+    height: 250px;
+
     padding: 20px;
     border: #61dafb 3px solid;
     text-align: center;
     border-radius: 5px;
 }
 
+.setCounterInputWrapper{
+    border: #61dafb 3px solid;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+}
+.inputContainer{
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    color: #61dafb;
+}
+.inputContainer input{
+    text-align: center;
+    height: 25px;
+    outline: none;
+    border: #61dafb 1px solid;
+    color: #61dafb;
+    padding: 0 5px ;
+
+}
+.inputContainer input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
 .counterValue{
     background-color: #61dafb;
     color: #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     border-radius: 5px;
     padding: 20px;
     font-weight: bold;
