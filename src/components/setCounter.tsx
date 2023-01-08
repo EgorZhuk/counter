@@ -16,7 +16,9 @@ export const SetCounter = () => {
       </div>
       <div className={s.counterButtons}>
         <button onClick={x=>x} disabled={true}>Set</button>
+        <button onClick={x=>x} disabled={true}>Reset</button>
       </div>
+
     </div>
   );
 };
