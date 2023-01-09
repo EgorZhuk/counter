@@ -26,18 +26,19 @@ function App() {
     setCounter({...counter, countValue: counter.countValue+1})
   }
   const countResetHandler =()=>{
-    setCounter({...counter, countValue: 0})
+    setCounter({...counter, countValue: counter.startValue})
   }
 
   const onChangeStartValueHandler = (event: ChangeEvent<HTMLInputElement>) =>{
-
+    setCounter({...counter, startValue: +event.currentTarget.value})
   }
 
   const onChangeMaxValueHandler = (event: ChangeEvent<HTMLInputElement>) =>{
-
+    setCounter({...counter, maxValue: +event.currentTarget.value})
   }
 
   const onClickSetValueHandler = ()=>{
+    setCounter({...counter, countValue: counter.startValue})
   }
 
   return (
@@ -53,6 +54,7 @@ function App() {
         countIncHandler={countIncHandler}
         countResetHandler={countResetHandler}
         countValue={counter.countValue}
+        maxCountValue={counter.maxValue}
 
       />
     </div>

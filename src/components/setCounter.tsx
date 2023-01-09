@@ -36,8 +36,8 @@ export const SetCounter = (props: PropsType) => {
       </div>
       <div className={s.counterButtons}>
 
-        <UniversalButton onClick={props.onClick} disabled={true} children={'Set'}/>
-        <UniversalButton onClick={()=>{}} disabled={false} children={'Reset'}/>
+        <UniversalButton onClick={props.onClick} disabled={false} children={'Set'}/>
+        {/*<UniversalButton onClick={()=>{}} disabled={false} children={'Reset'}/>*/}
 
       </div>
 

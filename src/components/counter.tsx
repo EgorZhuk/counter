@@ -6,12 +6,13 @@ type PropsType={
   countIncHandler: ()=>void
   countResetHandler: ()=>void
   countValue: number
+  maxCountValue: number
 }
 
 const Counter = (props:PropsType) => {
   // let [counter, setCounter]=useState<number>(0)
 
-  let countStyle = `${s.counterValue} ${props.countValue === 5 ? s.red : ''}`
+  let countStyle = `${s.counterValue} ${props.countValue === props.maxCountValue ? s.red : ''}`
 
   // const countIncHandler =()=>{
   //   setCounter(counter+1)
@@ -27,7 +28,7 @@ const Counter = (props:PropsType) => {
       </div>
       <div className={s.counterButtons}>
 
-        <UniversalButton onClick={props.countIncHandler} disabled={props.countValue===5} children={'Inc'}/>
+        <UniversalButton onClick={props.countIncHandler} disabled={props.countValue===props.maxCountValue} children={'Inc'}/>
         <UniversalButton onClick={props.countResetHandler} disabled={props.countValue===0} children={'Reset'}/>
 
 
