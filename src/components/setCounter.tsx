@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './counter.module.css';
+import UniversalButton from './universalComponents/UniversalButton';
 
 export const SetCounter = () => {
   return (
@@ -15,8 +16,10 @@ export const SetCounter = () => {
         </div>
       </div>
       <div className={s.counterButtons}>
-        <button onClick={x=>x} disabled={true}>Set</button>
-        <button onClick={x=>x} disabled={true}>Reset</button>
+
+        <UniversalButton onClick={()=>{}} disabled={true} children={'Set'}/>
+        <UniversalButton onClick={()=>{}} disabled={false} children={'Reset'}/>
+
       </div>
 
     </div>
